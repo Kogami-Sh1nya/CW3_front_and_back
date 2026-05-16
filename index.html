@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Заметки (13-17)</title>
+
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#4285f4">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <link rel="icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="https://unpkg.com/chota@latest">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="container">
+    <h1>А вот и «Заметки» — наше первое оффлайн-приложение</h1>
+
+    <nav class="tabs is-center">
+      <button id="home-btn" class="tab active" type="button">Главная</button>
+      <button id="about-btn" class="tab" type="button">О нас</button>
+    </nav>
+  </header>
+
+  <main id="app-content" class="container"></main>
+
+  <footer class="container is-center footer-buttons">
+    <button id="enable-push" class="button success" type="button">
+      Включить уведомления
+    </button>
+
+    <button id="disable-push" class="button error" type="button" style="display:none;">
+      Отключить уведомления
+    </button>
+  </footer>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>
